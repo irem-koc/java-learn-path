@@ -16,6 +16,6 @@ public class taksimetre {
         double perKm = 2.20;
         int opening = 10;
         double price = perKm * km < 10 ? 10 : perKm * km;
-        System.out.println("Ücret: " + (price + 10));
+        System.out.println("Ücret: " + (price + opening));
     }
 }
