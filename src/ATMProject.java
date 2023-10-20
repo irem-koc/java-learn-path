@@ -37,6 +37,7 @@ public class ATMProject {
                         } else {
                             bakiye -= price;
                             System.out.println("Bakiyeniz : " + bakiye);
+                            System.out.println(ln);
                         }
 
 
