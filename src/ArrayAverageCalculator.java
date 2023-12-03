@@ -4,11 +4,15 @@ public class ArrayAverageCalculator {
     public static void main(String[] args) {
         int[] numbers = {1, 2, 3, 4, 5};
         int result = 0;
+        double harmonik_seri = 0;
         for (int i : numbers) {
             result += i;
+            harmonik_seri += 1 / i;
         }
         double average = result / numbers.length;
         System.out.println(Arrays.toString(numbers) + " Ortalamanız: " + average);
+        double averageHarmonic = numbers.length / harmonik_seri;
+        System.out.println(Arrays.toString(numbers) + " Harmonik Ortalamanız: " + averageHarmonic);
         /*
         Dizideki Elemanların Ortalamasını Hesaplayan Program
 public class Main {
