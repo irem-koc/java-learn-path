@@ -1,20 +1,27 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        /*int value = 15;
+        Course mat = new Course("Matematik", "MAT101", "MAT", 60, 0.2);
+        Course fizik = new Course("Fizik", "FZK101", "FZK", 50, 0.4);
+        Course kimya = new Course("Kimya", "KMY101", "KMY", 75, 0.3);
 
-        System.out.println(value);
-        System.out.println(value + "+" +"2" +'=' + (value+2));
-        System.out.println('s');
+        Teacher t1 = new Teacher("Mahmut Hoca", "90550000000", "MAT");
+        Teacher t2 = new Teacher("Fatma Ayşe", "90550000001", "FZK");
+        Teacher t3 = new Teacher("Ali Veli", "90550000002", "KMY");
 
-        int a,b = 2,c;
-        a = 1;
-        c = a+b;
+        mat.addTeacher(t1);
+        fizik.addTeacher(t2);
+        kimya.addTeacher(t3);
 
-        System.out.println(b);*/
-        int kısa_kenar = 10, uzun_kenar = 20;
-        System.out.println("Alan: " + kısa_kenar * uzun_kenar);
-        System.out.println("Çevre: " + 2 * (kısa_kenar + uzun_kenar));
+        Student s1 = new Student("İnek Şaban", "140144015", 4, mat, fizik, kimya);
+        s1.addBulkExamNote(50, 20, 40);
+        s1.isPass();
+
+        Student s2 = new Student("Güdük Necmi", "2211133", 4, mat, fizik, kimya);
+        s2.addBulkExamNote(100, 50, 40);
+        s2.isPass();
+
+        Student s3 = new Student("Hayta İsmail", "221121312", 4, mat, fizik, kimya);
+        s3.addBulkExamNote(50, 20, 40);
+        s3.isPass();
     }
 }
