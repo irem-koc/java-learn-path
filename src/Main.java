@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Course mat = new Course("Matematik", "MAT101", "MAT", 60, 0.2);
+        /*Course mat = new Course("Matematik", "MAT101", "MAT", 60, 0.2);
         Course fizik = new Course("Fizik", "FZK101", "FZK", 50, 0.4);
         Course kimya = new Course("Kimya", "KMY101", "KMY", 75, 0.3);
 
@@ -22,6 +22,14 @@ public class Main {
 
         Student s3 = new Student("Hayta İsmail", "221121312", 4, mat, fizik, kimya);
         s3.addBulkExamNote(50, 20, 40);
-        s3.isPass();
+        s3.isPass();*/
+
+        int[] list = {10, 11, 12, 13, 14, 15};
+        for (int i = list.length; i > 0; i--) {
+            System.out.println(list[i - 1]);
+        }
+        for (int i : list) {
+            System.out.println(i);
+        }//for each
     }
 }
